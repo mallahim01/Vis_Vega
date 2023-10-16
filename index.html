@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        body {
+          font-family: 'Montserrat', sans-serif;
+          background-color: #F5F5F5;
+          margin: 0;
+          padding: 0;
+        }
+    
+        
+
+        h2 {
+            color: #070707;
+            font-size: 22px;
+            font-family: 'Georgia', serif;
+            text-align: center;
+            background-color: #ec559b;
+            color: #0c0b0b;
+            padding: 10px;
+            margin: 20px auto 10px;
+            border-radius: 5px;
+            width: 80%;
+          }
+
+        h6 {
+            color: #070707;
+            font-size: 16px;
+            font-family: 'Georgia', serif;
+            text-align: center;
+            background-color: #66B2FF;
+            color: #FFFFFF;
+            padding: 10px;
+            margin: 20px auto 10px;
+            border-radius: 5px;
+            width: 80%;
+          }
+    
+        
+          h5 {
+            color: #070707;
+            font-size: 34px;
+            font-family: 'Georgia', serif;
+            text-align: center;
+            background-color: #084078;
+            color: #FFFFFF;
+            padding: 10px;
+            margin: 20px auto 10px;
+            border-radius: 5px;
+            width: 80%;
+          }
+
+          div.visualization {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            
+        }
+    
+        
+      </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.12.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.1"></script>
+
+    <script src="hw_10_1.js"></script>
+    <script src="hw_10_1.js"></script>
+    <link rel = "stylesheet" href = "choropleth_map.css">
+    <title>Vega Lite </title>
+</head>
+
+<body>
+
+    <h5>In Our Ever-Evolving World, Understanding the Distribution of Population</h5>
+
+
+    <h2>World Population: A Global Perspective</h2>
+<h6>In our ever-evolving world, understanding the distribution of population across countries is vital. This map offers a snapshot of the global population in 2022, showcasing both the variations and concentrations of people around the globe. The visualization provides valuable insights into global population distribution by categorizing countries based on their population sizes, allowing you to explore the diverse demographics of our planet, understand regional disparities, and grasp the impact of population growth. It's a powerful tool for researchers, policymakers, and anyone interested in understanding the dynamics of our world's demographics.</h6>
+
+    <div class="visualization" id="choropleth_map">
+    </div>
+
+    <h2>Bubble Chart of Population by Country</h2>
+<h6>Explore the global landscape of population distribution in this interactive bubble chart. Each bubble represents a country, with the size of the bubble indicating its population in 2022. The vibrant colors distinguish countries by continent, providing a visual overview of global demographics. Hover over a bubble to reveal the country's name and its population for the year 2022. This visualization offers a quick and insightful way to compare the population of different countries and continents, making it a valuable tool for understanding the world's demographic diversity.</h6>
+
+    <div class="visualization" id="hw_10_1">
+    </div>
+
+
+    <h2>Geographic Distribution of Australian Addresses</h2>
+<h6>Explore the geographic distribution of addresses in Australia with this interactive visualization. Each circle on the map represents a unique address, with its position determined by longitude and latitude. The colors distinguish different regions or areas, helping you identify clusters or patterns in the data. This visualization provides valuable insights into the spatial distribution of addresses across Australia, making it a useful tool for location-based analysis and understanding regional trends.</h6>
+
+    <div class="visualization" id="hw_10_2">
+    </div>
+
+    
+    <h2>Population Density Across Geographic Locations</h2>
+<h6>Delve into the geographic landscape with this visualization that illustrates population density across various locations. Each circle on the map represents a specific geographic point, with its size reflecting the population residing in that area. The vibrant colors further highlight areas of high and low population density. This interactive map allows you to discern patterns and trends related to population distribution, making it a valuable resource for geographical analysis and understanding the density variations across different regions.</h6>
+
+    <div class="visualization" id="map_aus">
+    </div>
+
+    
+    <h2>Population of Australian Cities</h2>
+<h6>Discover the population distribution across Australian cities with this interactive point chart. Each point represents a city, and its size corresponds to the city's population. The rich color scheme vividly illustrates variations in population size. While the largest cities like Sydney and Melbourne stand out, this visualization allows you to explore population data for cities of all sizes. Simply hover over a point to see the city's name and its population. Whether you're interested in urban demographics or comparative city sizes, this chart provides valuable insights into the population landscape of Australia.</h6>
+
+    <div class="visualization" id="scatter">
+    </div>
+
+    <h2>Distribution of Addresses by Australian Regions</h2>
+<h6>Explore the geographical distribution of addresses across different regions in Australia with this insightful bar chart. Each bar represents a region, and the height of the bar signifies the number of addresses in that area. The use of color helps you distinguish between regions at a glance. This visualization is a valuable tool for understanding the concentration of addresses across various parts of the country. Whether you're interested in regional analysis or planning, this chart provides a clear overview of address distribution in Australia.</h6>
+
+    <div class="visualization" id="bar"></div>
+    
+    <h2>Population Distribution by Australian States</h2>
+    <h6>Gain insights into the population distribution across Australian states with this informative bar chart. Each bar represents a state, with the height of the bar reflecting the total population. The rich blue color adds a visual element to the data, making it easy to distinguish between states. Hover over each bar to reveal the exact population count. This chart is a powerful tool for understanding how Australia's population is distributed across its states and territories. Whether you're interested in demographic trends or state-wise comparisons, this visualization provides a clear picture of the population landscape.</h6>
+    
+    <div class="visualization" id="bar_chart">
+    </div>
+
+
+    <div class="footer">
+        Last Updated: 17/10/2023
+    </div>
+
+    <div class="footer">
+        Muhammad Amin
+    </div>
+
+    <div class="footer">
+        30163331
+    </div>
+
+</body>
+
+</html>

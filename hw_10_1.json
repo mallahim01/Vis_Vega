@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {
+    "url": "world_population.csv"
+  },
+  "mark": {
+    "type": "circle",
+    "tooltip": true
+  },
+  "encoding": {
+    "y": {"field": "Country/Territory", "type": "nominal", "title": "Countries", "axis": {"labels": false}},
+    "x": {"field": "2022 Population", "type": "quantitative", "axis": {"title": "Population"}},
+    "size": {"field": "2022 Population", "type": "quantitative",  "scale": {"range": [50, 1000]}},
+    "color": {"field": "Continent", "type": "nominal"},
+    "tooltip": [
+      {"field": "Country/Territory", "type": "nominal", "title": "Country"},
+      {"field": "2022 Population", "type": "quantitative", "title": "Population"}
+    ]
+  },
+  "width": 800,
+  "height": 400,
+  "title": "Bubble Chart of Population by Country",
+  "config": {
+    "view": {"stroke": "transparent"}
+  }
+}
